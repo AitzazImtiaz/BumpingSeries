@@ -1,10 +1,10 @@
 #include <iostream>
-#include <windows.h>
+
 #include "InfInt.h"
 
 #include <cmath>
 
-#pragma comment(lib, "user32")
+
 
 #include "InfInt.h"
 
@@ -35,7 +35,6 @@ InfInt a(InfInt n) {
 
 int main()
 {
-    ::SendMessage(::GetConsoleWindow(), WM_SYSKEYDOWN, VK_RETURN, 0x20000000);
     InfInt n = 1;
     while(true) {
         std::cout << a(n);
